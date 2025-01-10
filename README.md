@@ -2,13 +2,13 @@
 
 This repository provides an end-to-end implementation of an image classification project using Convolutional Neural Networks (CNN). The model is trained on a custom dataset of images and is capable of predicting the labels of test images with high accuracy.
 
-Project Structure
+**Project Structure**
 
 Training Data: The training data is located in the Data/Train directory, organized into subfolders where each folder represents a class label.
 
 Test Data: The test images are located in the Data/Test directory. Each image is assigned a unique ID for prediction.
 
-Model Architecture
+**Model Architecture**
 
 The CNN model was designed to classify images into two categories. The model includes several convolutional layers followed by max-pooling, flattening, and dense layers. Here's a quick breakdown of the architecture:
 
@@ -24,7 +24,7 @@ The CNN model was designed to classify images into two categories. The model inc
 
 The model uses the Adam optimizer and categorical cross-entropy loss function to optimize performance.
 
-Layers
+**Layers**
 
 Conv2D: Extracts features from images.
 
@@ -37,7 +37,7 @@ Dense: Fully connected layers for classification.
 Dropout: Reduces overfitting by randomly ignoring some of the neurons during training.
 
 
-Data Preprocessing
+**Data Preprocessing**
 
 Before training, the images are preprocessed as follows:
 
@@ -48,7 +48,7 @@ The pixel values are normalized by dividing by 255 to bring them into the range 
 Labels are one-hot encoded using LabelEncoder to transform categorical labels into a format suitable for model training.
 
 
-Model Training
+**Model Training**
 
 To train the model, run the following code:
 
@@ -57,7 +57,7 @@ model.fit(x_train, y_train, batch_size=25, epochs=20, verbose=2)
 
 During training, the model learns to recognize patterns in the training data, minimizing the error through the backpropagation of the loss function.
 
-Testing the Model
+**Testing the Model**
 
 You can use the test_on_1_img() function to test individual images from the test set. Here's an example:
 
@@ -67,7 +67,7 @@ For batch testing, use the test() function, which will generate predictions for 
 
 image_name, predicted_labels, exc_img = test(TEST_DIR)
 
-Output
+**Output**
 
 The results of the predictions are stored in a Pandas DataFrame, which is then saved as a CSV file:
 
@@ -75,11 +75,11 @@ predicted_data.to_csv('final_prediction_sorted.csv', index=False)
 
 This CSV file contains the IDs of the test images and their corresponding predicted labels.
 
-Handling Errors
+**Handling Errors**
 
 There is a known issue with one test image (image_62.jpg), which throws an exception during prediction. To avoid disrupting the process, error handling has been implemented to skip over this image.
 
-How to Use This Repository
+**How to Use This Repository**
 
 1. Clone the repository:
 

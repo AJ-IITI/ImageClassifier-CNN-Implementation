@@ -86,13 +86,16 @@ There is a known issue with one test image (image_62.jpg), which throws an excep
 git clone https://github.com/AJ-IITI/ImageClassifier-CNN-Implementation
 
 
-2. Place your training and test data in the appropriate directories (Data/Train and Data/Test).
+2. To Download the Testing and Training Data, go through the given link https://www.kaggle.com/competitions/induction-task/data
 
 
-3. Run the first cell code to train the CNN model on the dataset.
+3. Place your training and test data in the appropriate directories (Data/Train and Data/Test).
 
 
-4. Use the test() function to predict labels for your test images.
+4. Run the first cell code to train the CNN model on the dataset.
 
 
-5. Save the results to a CSV file for further analysis.
+5. Use the test() function to predict labels for your test images.
+
+
+6. Save the results to a CSV file for further analysis.

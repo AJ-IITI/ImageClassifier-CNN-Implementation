@@ -83,7 +83,7 @@ There is a known issue with one test image (image_62.jpg), which throws an excep
 
 1. Clone the repository:
 
-git clone [https://github.com/your-username/image-classification-cnn.git](https://github.com/AJ-IITI/ImageClassifier-CNN-Implementation)
+git clone https://github.com/AJ-IITI/ImageClassifier-CNN-Implementation
 
 
 2. Place your training and test data in the appropriate directories (Data/Train and Data/Test).
